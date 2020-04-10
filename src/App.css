@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+* {
+  font-size: 18px;
+  color: #666666;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.price-list {
+  max-width: 1280px;
+  margin: 50px auto;
+  box-shadow: 1px 2px 8px #cccccc;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.col {
+  width: 100%;
+  display: grid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+th {
+  padding: 20px;
+}
+
+th,
+td {
+  border: none;
+}
+
+tr {
+  border: 0;
+}
+
+table {
+  text-align: left;
+  box-shadow: 1px 0 5px #dddddd;
+  border-radius: 10px;
+}
+
+thead {
+  background-color: #eeeeee;
+  color: #444444;
+}
+
+.tag {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.tag-time {
+  float: right;
+}
+
+.form-input {
+  border: none;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 24px;
+}
+
+.form-input:focus {
+  border: 0;
+  outline: 0;
+  background-color: lightblue;
+}
+.form-input::placeholder {
+  color: #cccccc;
+}
+
+.input-group {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-group .input-group-text {
+  padding: 12px 20px 12px 0;
+  font-size: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  padding: 12px;
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  margin: 10px;
+  max-width: 100px;
 }
